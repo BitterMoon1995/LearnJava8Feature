@@ -43,7 +43,7 @@ public class L1_Significance {
     }
 
     //例二：策略模式+函数式接口+lambda实现匿名内部类整活儿
-    private ArrayList<Employee> testEmps() {
+    public ArrayList<Employee> testEmps() {
         ArrayList<Employee> list = new ArrayList<>();
         list.add(new Employee("a",false,22,2000));
         list.add(new Employee("b",true,12,12000));
