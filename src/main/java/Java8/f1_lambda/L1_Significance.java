@@ -45,11 +45,11 @@ public class L1_Significance {
     //例二：策略模式+函数式接口+lambda实现匿名内部类整活儿
     public ArrayList<Employee> testEmps() {
         ArrayList<Employee> list = new ArrayList<>();
-        list.add(new Employee("a",false,22,2000));
-        list.add(new Employee("b",true,12,12000));
-        list.add(new Employee("c",false,52,20000));
-        list.add(new Employee("d",true,42,5000));
-        list.add(new Employee("e",false,27,9000));
+        list.add(new Employee("a",false,22,2000,Status.FREE));
+        list.add(new Employee("b",true,12,12000,Status.FREE));
+        list.add(new Employee("c",false,52,20000,Status.FREE));
+        list.add(new Employee("d",true,42,5000,Status.FREE));
+        list.add(new Employee("e",false,27,9000,Status.FREE));
         return list;
     }
 

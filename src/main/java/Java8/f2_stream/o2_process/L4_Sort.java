@@ -1,5 +1,6 @@
-package Java8.f2_stream;
+package Java8.f2_stream.o2_process;
 
+import Java8.f1_lambda.ListUtil;
 import Java8.f1_lambda.Employee;
 import org.junit.Test;
 
@@ -7,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-//排序
+//流的中间操作之排序
 public class L4_Sort {
     //自然排序（compareTo）
     @Test
@@ -34,12 +35,6 @@ public class L4_Sort {
 
 
     public ArrayList<Employee> getEmp() {
-        ArrayList<Employee> list = new ArrayList<>();
-        list.add(new Employee("a", false, 33, 8000));
-        list.add(new Employee("b", true, 22, 12000));
-        list.add(new Employee("c", false, 52, 20000));
-        list.add(new Employee("d", true, 52, 2500));
-        list.add(new Employee("e", false, 40, 5000));
-        return list;
+        return ListUtil.getEmps();
     }
 }

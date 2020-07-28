@@ -12,6 +12,7 @@ public class Employee {
     Boolean gender;
     Integer age;
     Integer salary;
+    Status status;
 
     public Employee(String name) {
         this.name = name;
@@ -21,4 +22,6 @@ public class Employee {
         this.name = name;
         this.age = age;
     }
+
+
 }

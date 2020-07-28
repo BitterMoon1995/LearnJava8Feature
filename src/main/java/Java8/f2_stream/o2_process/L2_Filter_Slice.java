@@ -1,5 +1,6 @@
-package Java8.f2_stream;
+package Java8.f2_stream.o2_process;
 
+import Java8.f1_lambda.ListUtil;
 import Java8.f1_lambda.Employee;
 import org.junit.Test;
 
@@ -60,12 +61,6 @@ public class L2_Filter_Slice {
     }
 
     public ArrayList<Employee> testEmp() {
-        ArrayList<Employee> list = new ArrayList<>();
-        list.add(new Employee("a", false, 33, 8000));
-        list.add(new Employee("b", true, 22, 12000));
-        list.add(new Employee("c", false, 52, 20000));
-        list.add(new Employee("d", true, 52, 2500));
-        list.add(new Employee("e", false, 40, 5000));
-        return list;
+        return new ListUtil().getEmps();
     }
 }

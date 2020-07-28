@@ -1,4 +1,4 @@
-package Java8.f2_stream;
+package Java8.f2_stream.o1_create;
 
 import org.junit.Test;
 

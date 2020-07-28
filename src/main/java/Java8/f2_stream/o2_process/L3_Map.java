@@ -1,5 +1,6 @@
-package Java8.f2_stream;
+package Java8.f2_stream.o2_process;
 
+import Java8.f1_lambda.ListUtil;
 import Java8.f1_lambda.Employee;
 import org.junit.Test;
 
@@ -11,7 +12,7 @@ import java.util.stream.Stream;
 //流的中间操作之map
 /*  map
 接收一个函数作为参数，该函数会应用到每一个元素上，
-并将其映射为一个新的元素。最终返回一个包含新元素的新流
+并将其映射为一个新的元素。最终返回一个包含所有新元素的新流
  */
 public class L3_Map {
     @Test
@@ -64,12 +65,6 @@ public class L3_Map {
 
 
     public ArrayList<Employee> getEmp() {
-        ArrayList<Employee> list = new ArrayList<>();
-        list.add(new Employee("a", false, 33, 8000));
-        list.add(new Employee("b", true, 22, 12000));
-        list.add(new Employee("c", false, 52, 20000));
-        list.add(new Employee("d", true, 52, 2500));
-        list.add(new Employee("e", false, 40, 5000));
-        return list;
+        return new ListUtil().getEmps();
     }
 }
