@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 public class L2_Filter_Slice {
 
 
-    @Test   //filter   过滤。返回过滤后的流（其他操作同理）
+    @Test   //filter   通过设置的条件过滤出元素。返回过滤后的流（其他操作同理）
     public void t1() {
         ArrayList<Employee> employees = testEmp();
         Stream<Employee> stream = employees.stream();
@@ -24,7 +24,7 @@ public class L2_Filter_Slice {
                 .forEach(System.out::println);//内部迭代
     }
 
-    @Test  //limit   截断
+    @Test  //limit   获取指定数量的流
     public void t2() {
         ArrayList<Employee> employees = testEmp();
         employees.stream().limit(3).forEach(System.out::println);

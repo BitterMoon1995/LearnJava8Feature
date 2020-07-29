@@ -16,7 +16,7 @@ public class L6_Reduce_Collect {
         empList = ListUtil.getEmps();
     }
 
-    //reduce,将集合中的每一个元素按指定方式归纳为一个新的值
+    //reduce,根据指定的计算模型将Stream中的值计算得到一个最终结果
     @Test
     public void test1() {
         List<Integer> intList = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
